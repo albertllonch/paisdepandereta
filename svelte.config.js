@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-auto';
-import {sveltekit} from '@sveltejs/kit/vite';
+import { sveltekit } from '@sveltejs/kit/vite';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import tailwindcss from '@tailwindcss/vite';
 
@@ -14,10 +14,7 @@ const config = {
 		adapter: adapter()
 	},
 
-    plugins : [
-        tailwindcss(),
-        sveltekit()
-    ]
+	plugins: [tailwindcss(), sveltekit()]
 };
 
 export default config;
