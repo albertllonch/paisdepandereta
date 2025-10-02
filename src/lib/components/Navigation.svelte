@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 
 	let mobileMenuOpen = $state(false);
 
@@ -52,7 +52,7 @@
 							href={item.href}
 							data-sveltekit-preload-data="hover"
 							class="flex items-center space-x-1 rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200
-								   {$page.url.pathname === item.href
+								   {page.url.pathname === item.href
 								? 'bg-red-50 text-red-600'
 								: 'text-gray-700 hover:bg-red-50 hover:text-red-600'}"
 						>
@@ -126,7 +126,7 @@
 							data-sveltekit-preload-data="hover"
 							onclick={closeMobileMenu}
 							class="flex items-center space-x-2 rounded-md px-3 py-2 text-base font-medium transition-colors duration-200
-								   {$page.url.pathname === item.href
+								   {page.url.pathname === item.href
 								? 'bg-red-100 text-red-600'
 								: 'text-gray-700 hover:bg-red-50 hover:text-red-600'}"
 						>
