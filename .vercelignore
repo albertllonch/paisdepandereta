@@ -1,0 +1,9 @@
+.git
+.github
+docs
+node_modules
+*.md
+.gitignore
+.eslintrc.cjs
+.prettierrc
+tsconfig.json
