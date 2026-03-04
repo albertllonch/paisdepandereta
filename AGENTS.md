@@ -99,6 +99,10 @@ src/
 
 ## Git Workflow
 
+### IMPORTANT: NEVER Push to Main
+
+**🚨 CRITICAL: All development MUST happen on feature branches via Pull Requests. Direct pushes to main are STRICTLY FORBIDDEN.**
+
 ### Branch Naming
 
 - `feature/blog-system`
@@ -122,12 +126,33 @@ test(blog): add unit tests for BlogPost
 git status
 git branch
 
-# Create feature branch
+# Create feature branch (ALWAYS create a branch first!)
 git checkout -b feature/your-feature-name
 
-# Verify you're on the right branch
+# Verify you're on the right branch (NOT main)
 git branch
 ```
+
+feat(blog): add post listing component
+fix(blog): resolve hydration mismatch
+refactor(blog): extract pagination logic
+test(blog): add unit tests for BlogPost
+
+````
+
+### Before Starting Work
+
+```bash
+# Check current status
+git status
+git branch
+
+# Create feature branch (ALWAYS create a branch first!)
+git checkout -b feature/your-feature-name
+
+# Verify you're on the right branch (NOT main)
+git branch
+````
 
 ## Multi-Agent Coordination
 
@@ -244,13 +269,23 @@ npm run check         # Type check
 npm run test          # Run tests
 ```
 
-### 4. Commit & Push
+### 4. Commit & Create Pull Request
 
 ```bash
+# Stage and commit changes
 git add .
 git commit -m "feat(scope): description"
+
+# Push to remote (creates branch on GitHub)
 git push -u origin feature/your-feature
+
+# Create Pull Request via GitHub CLI (or use GitHub web interface)
+gh pr create --title "feat(scope): description" --body "Description of changes"
+
+# DO NOT MERGE - Wait for review and approval
 ```
+
+**CRITICAL:** Never merge your own PR. Always wait for review from another agent or human.
 
 ## Code Quality Checklist
 
