@@ -1,23 +1,21 @@
 <script lang="ts">
 	import '../app.css';
-	import favicon from '$lib/assets/favicon.svg';
 	import Navigation from '$lib/components/Navigation.svelte';
 
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
-	<title>País de Pandereta - Plataforma de Transparencia y Herramientas Ciudadanas</title>
+	<title>País de Pandereta</title>
 	<meta
 		name="description"
-		content="Plataforma abierta que ofrece herramientas digitales y datos contrastados para facilitar la relación con la burocracia en España."
+		content="Plataforma abierta de datos y herramientas ciudadanas."
 	/>
 </svelte:head>
 
-<div class="min-h-screen bg-gray-50">
+<div class="min-h-screen bg-white">
 	<Navigation />
-	<main class="container mx-auto px-4 py-8">
+	<main class="mx-auto max-w-3xl px-4 py-8">
 		{@render children?.()}
 	</main>
 </div>
