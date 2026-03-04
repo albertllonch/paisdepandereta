@@ -1,10 +1,10 @@
-# 🇪🇸 Pais de Pandereta – Plataforma Abierta de Transparencia y Herramientas Ciudadanas
+# Pais de Pandereta – Plataforma Abierta de Transparencia y Herramientas Ciudadanas
 
 Pais de Pandereta es una plataforma de código abierto cuyo objetivo es ofrecer a la ciudadanía herramientas digitales, información accesible y datos contrastados que faciliten la relación con la burocracia en España.
 
 Queremos dar visibilidad a los problemas de gestión, gasto y lentitud administrativa, pero también reconocer los aciertos y buenas prácticas cuando existen.
 
-## 🚀 Objetivos del proyecto
+## Objetivos del proyecto
 
 - Brindar herramientas ciudadanas que simplifiquen trámites burocráticos.
 
@@ -14,7 +14,7 @@ Queremos dar visibilidad a los problemas de gestión, gasto y lentitud administr
 
 - Construir un ecosistema modular y abierto en el que la comunidad pueda proponer, desarrollar y mejorar funcionalidades.
 
-## 🔧 Funcionalidades previstas
+## Funcionalidades previstas
 
 - Comparadores de gasto público y tiempos administrativos.
 
@@ -37,4 +37,4 @@ Cualquier persona puede:
 
 - Reportar problemas o errores en trámites para visibilizar la experiencia real de los ciudadanos.
 
-👉 Consulta nuestra guía de contribución (próximamente).
+Consulta nuestra guía de contribución (próximamente).
