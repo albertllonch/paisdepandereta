@@ -50,3 +50,6 @@ coverage/
 .cache/
 .parcel-cache/
 .eslintcache
+
+# AI
+*/**/AGENTS*.md
