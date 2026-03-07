@@ -52,4 +52,4 @@ coverage/
 .eslintcache
 
 # AI
-*/**/AGENTS*.md
+AGENTS*.md
