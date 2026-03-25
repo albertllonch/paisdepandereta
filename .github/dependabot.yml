@@ -1,0 +1,33 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: 'deps'
+    labels:
+      - 'dependencies'
+      - 'security'
+    reviewers:
+      - owner/maintainer
+    groups:
+      production-dependencies:
+        patterns:
+          - '*'
+        exclude-patterns:
+          - '@types/*'
+          - '@testing-library/*'
+          - 'eslint*'
+          - 'prettier*'
+        dependency-type: 'production'
+      dev-dependencies:
+        patterns:
+          - '@types/*'
+          - '@testing-library/*'
+          - 'eslint*'
+          - 'prettier*'
+          - 'vitest'
+          - 'playwright'
+        dependency-type: 'development'

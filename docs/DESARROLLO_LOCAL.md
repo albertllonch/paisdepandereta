@@ -21,14 +21,14 @@ npm install
 
 ## Comandos Disponibles
 
-| Comando | Descripción |
-|---------|-------------|
-| `npm run dev` | Iniciar servidor de desarrollo |
-| `npm run build` | Compilar para producción |
+| Comando           | Descripción                       |
+| ----------------- | --------------------------------- |
+| `npm run dev`     | Iniciar servidor de desarrollo    |
+| `npm run build`   | Compilar para producción          |
 | `npm run preview` | Previsualizar build de producción |
-| `npm run check` | Verificar tipos y Svelte |
-| `npm run format` | Formatear código con Prettier |
-| `npm run lint` | Verificar estilo de código |
+| `npm run check`   | Verificar tipos y Svelte          |
+| `npm run format`  | Formatear código con Prettier     |
+| `npm run lint`    | Verificar estilo de código        |
 
 ## Ejecutar en Desarrollo
 

@@ -7,10 +7,7 @@
 
 <svelte:head>
 	<title>País de Pandereta</title>
-	<meta
-		name="description"
-		content="Plataforma abierta de datos y herramientas ciudadanas."
-	/>
+	<meta name="description" content="Plataforma abierta de datos y herramientas ciudadanas." />
 </svelte:head>
 
 <div class="min-h-screen bg-white">
