@@ -1,11 +1,22 @@
+<script module lang="ts">
+	export interface NavItem {
+		name: string;
+		href: string;
+		visible?: boolean;
+	}
+</script>
+
 <script lang="ts">
 	import { page } from '$app/state';
 
-	const navItems = [
+	const defaultNavItems: NavItem[] = [
 		{ name: 'Inicio', href: '/' },
-		{ name: 'Blog', href: '/blog' },
+		{ name: 'Blog', href: '/blog', visible: false },
 		{ name: 'Acerca de', href: '/acerca-de' }
 	];
+
+	let { navItems = defaultNavItems }: { navItems?: NavItem[] } = $props();
+	let items = $derived(navItems ?? defaultNavItems);
 </script>
 
 <nav class="border-b border-gray-200 bg-white">
@@ -16,12 +27,12 @@
 			</a>
 
 			<div class="flex items-center gap-6">
-				{#each navItems as item (item.href)}
+				{#each items.filter((item) => item.visible !== false) as item (item.href)}
 					<a
 						href={item.href}
 						data-sveltekit-preload-data="hover"
 						class="text-sm transition-colors {page.url.pathname === item.href
-							? 'text-gray-900 font-medium'
+							? 'font-medium text-gray-900'
 							: 'text-gray-500 hover:text-gray-900'}"
 					>
 						{item.name}

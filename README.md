@@ -14,45 +14,6 @@ Queremos dar visibilidad a los problemas de gestión, gasto y lentitud administr
 
 - Construir un ecosistema modular y abierto en el que la comunidad pueda proponer, desarrollar y mejorar funcionalidades.
 
-## Features
-
-### Blog System (In Progress)
-
-A data-driven blog publishing weekly articles analyzing Spanish public administration with contrasted official data.
-
-### Planned Features
-
-**Phase 1 - Blog Platform**
-
-- Article listing with pagination and search
-- Individual article pages
-- Tag-based categorization
-- Responsive design
-
-**Phase 2 - Data Comparators**
-
-- Public spending comparison tool
-- Administrative processing time tracker
-- Visual data representations
-
-**Phase 3 - Form Generators**
-
-- Auto-fill official document templates
-- Common bureaucratic procedure guides
-- Document validation helpers
-
-**Phase 4 - Community Tools**
-
-- Collaborative reporting system
-- User-submitted timing data
-- Community-verified information
-
-**Phase 5 - Plugin System**
-
-- Modular architecture for community extensions
-- Plugin marketplace
-- Custom tool integration
-
 ## Contribución
 
 Este es un proyecto abierto a la comunidad.
